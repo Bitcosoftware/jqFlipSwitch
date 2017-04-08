@@ -213,7 +213,7 @@
      * @param {FLIPPER_STATES} state This argument is either 'left' or 'right'.
      */
     var _invokeCallback = function(event, settings, state) {
-        if (!$.isPlainObject(event) || !('type' in event) || !$.isPlainObject(settings) || !$.isFunction(settings[event.type])) {
+        if (!('type' in event) || !$.isPlainObject(settings) || !$.isFunction(settings[event.type])) {
             return;
         }
 
